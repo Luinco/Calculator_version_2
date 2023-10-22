@@ -1,0 +1,6 @@
+<!--pages/tabbar2/complexCalc/history/history.wxml-->
+<view>
+    <block wx:for="{{exprs}}" wx:key="index">
+        <view>{{item}}</view>
+    </block>
+  </view>

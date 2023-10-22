@@ -1,0 +1,46 @@
+<!--pages/tabbar2/complexCalc/complexCalc.wxml-->
+<view class="container">
+    <view class="screen">{{result}}</view>
+    <view class="rowBox">
+        <button class="item orange" hover-class="other-button-hover" id="{{history}}" bindtap="clickButton">
+        ◀
+        </button>
+        <button class="item orange" hover-class="other-button-hover"  id="{{clearnum}}" bindtap="clickButton">AC
+        </button>
+        <button class="item orange" hover-class="other-button-hover" id="{{back}}" bindtap="clickButton">←</button>
+        <button class="item gery" hover-class="other-button-hover" id="{{divide}}" bindtap="clickButton">÷</button>
+    </view>
+    <view class="rowBox">
+        <button class="item blue" hover-class="button-hover-num" id="{{id7}}" bindtap="clickButton">7</button>
+        <button class="item blue" hover-class="button-hover-num" id="{{id8}}" bindtap="clickButton">8</button>
+        <button class="item blue" hover-class="button-hover-num" id="{{id9}}" bindtap="clickButton">9</button>
+        <button class="item gery" hover-class="other-button-hover" id="{{multiply}}" bindtap="clickButton">×</button>
+    </view>
+    <view class="rowBox">
+        <button class="item blue" hover-class="button-hover-num" id="{{id4}}" bindtap="clickButton">4</button>
+        <button class="item blue" hover-class="button-hover-num" id="{{id5}}" bindtap="clickButton">5</button>
+        <button class="item blue" hover-class="button-hover-num" id="{{id6}}" bindtap="clickButton">6</button>
+        <button class="item gery" hover-class="other-button-hover" id="{{subtract}}" bindtap="clickButton">-</button>
+    </view>
+    <view class="rowBox">
+        <button class="item blue" hover-class="button-hover-num" id="{{id1}}" bindtap="clickButton">1</button>
+        <button class="item blue" hover-class="button-hover-num" id="{{id2}}" bindtap="clickButton">2</button>
+        <button class="item blue" hover-class="button-hover-num" id="{{id3}}" bindtap="clickButton">3</button>
+        <button class="item gery" hover-class="other-button-hover" id="{{plus}}" bindtap="clickButton">+</button>
+    </view>
+    <view class="rowBox">
+        <button class="item orange" hover-class="other-button-hover" id="{{negative}}" bindtap="clickButton">±</button>
+        <button class="item blue" hover-class="other-button-hover" id="{{id0}}" bindtap="clickButton">0</button>
+        <button class="item gery" hover-class="other-button-hover" id="{{dot}}" bindtap="clickButton">.</button>
+        <button class="item gery" hover-class="other-button-hover" id="{{equal}}" bindtap="clickButton">=</button>
+    </view>
+    
+    <view class="btnGroup">
+        <switch checked="{{record}}" bindchange="RecordHistory">
+            <view>保存历史记录</view>
+        </switch>
+    </view>
+</view>
+
+
+
